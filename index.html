@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Meet your Computer</title>
+<link rel="stylesheet" type="text/css" href="css/ys.css" />
+<script src="js/jquery-1.5.2.js"></script>
+</head>
+
+<body>
+  <p>
+  <span style="
+       text-align: center;
+       padding-bottom: 15px;
+       background-color: #99ccff;
+       padding-left: 50px;
+       padding-right: 500px;
+       color: #0000ff;
+       padding-top: 15px;
+       box-shadow: 10px 10px 5px #888888;"
+  ><strong><span style="font-size: 32px;">Meet Your Computer</span></strong></span></p>
+<div class="wrap">
+<form action="#" method="post">
+<div class="ysbox">
+<div class="bdxz_a">Budget</div>
+<div class="bd_box">
+<Input type="radio" id="p1" name="price" class="lab_a" value="1500~3000" /><label for="p1" class="lab_a">1500~3000</label>
+<Input type="radio" id="p2" name="price" class="lab_a" value="3000~6000" /><label for="p2" class="lab_a">3000~6000</label>
+<Input type="radio" id="p3" name="price" class="lab_a" value="6000~10000"/><label for="p3" class="lab_a">6000~10000</label>
+<Input type="radio" id="p3" name="price" class="lab_a" value="10000+"/><label for="p3" class="lab_a">10000+</label>
+</div>
+</div>
+<div class="ysbox">
+<div class="bdxz_a">What do you need?</div>
+<div class="xm_box">
+<div class="xhsm">
+<div class="ttx">For Game?</div>
+<Input type="checkbox" id="yt1" name="yt" class="lab_a" value="Minesweeper" /><label for="yt1" class="lab_a">Minesweeper</label>
+<Input type="checkbox" id="yt2" name="yt" class="lab_a" value="dota2" /><label for="yt2" class="lab_a">dota2</label>
+<Input type="checkbox" id="yt3" name="yt" class="lab_a" value="Wizard3" /><label for="yt3" class="lab_a">Wizrd3</label>
+</div>
+
+<div class="xhsm">
+<div class="ttx">For Office?</div>
+<Input type="checkbox" id="yt4" name="yt" class="lab_a" value="Ps" /><label for="yt4" class="lab_a">Ps</label>
+<Input type="checkbox" id="yt5" name="yt" class="lab_a" value="Pr" /><label for="yt5" class="lab_a">Pr</label>
+<Input type="checkbox" id="yt6" name="yt" class="lab_a" value="Office" /><label for="yt6" class="lab_a">Office</label>
+</div>
+<div class="xhsm">
+<div class="ttx">Other needs?</div>
+<Input type="checkbox" id="yt7" name="yt" class="lab_a" value="Big Screen" /><label for="yt7" class="lab_a">Big Screen</label>
+<Input type="checkbox" id="yt8" name="yt" class="lab_a" value="Good Service" /><label for="yt8" class="lab_a">Good Service</label>
+<Input type="checkbox" id="yt9" name="yt" class="lab_a" value="Portable" /><label for="yt9" class="lab_a">Portable</label>
+</div>
+</div>
+</div>
+<div class="ysbox">
+<div class="bdxz_a">Brand Requirement?</div>
+<div class="bd_box">
+<Input type="checkbox" id="pp1" name="pp" class="lab_a" value="Lenovo" /><label for="pp1" class="lab_a">Lenovo</label>
+<Input type="checkbox" id="pp2" name="pp" class="lab_a" value="Dell" /><label for="pp2" class="lab_a">Dell</label>
+<Input type="checkbox" id="pp3" name="pp" class="lab_a" value="Apple" /><label for="pp3" class="lab_a">Apple</label>
+<Input type="checkbox" id="pp4" name="pp" class="lab_a" value="ASUS" /><label for="pp4" class="lab_a">ASUS</label>
+<Input type="checkbox" id="pp5" name="pp" class="lab_a" value="ShenZhou"/><label for="pp5" class="lab_a">ShenZhou</label>
+<Input type="checkbox" id="pp6" name="pp" class="lab_a" value="HP"/><label for="pp6" class="lab_a">HP</label>
+</div>
+</div>
+<div class="ysbox">
+<div class="bdxz_a">Type of your Computer</div>
+<div class="bd_box">
+<Input type="radio" id="jx1" name="jx" class="lab_a" value="Labtop" /><label for="jx1" class="lab_a">Labtop</label>
+<Input type="radio" id="jx2" name="jx" class="lab_a" value="AIO" /><label for="jx2" class="lab_a">AIO</label>
+</div>
+</div>
+<div class="ysbox">
+<div class="bdxz_a">Hardware Requirement</div>
+<div class="bd_box">
+<Input type="radio" id="yj1" name="yj" class="lab_a" value="NO,thanks" onclick="pzset('0')"/><label for="yj1" class="lab_a">No,thanks</label>
+<Input type="radio" id="yj2" name="yj" class="lab_a" value="Yes,choos now" onclick="pzset('1')"/><label for="yj2" class="lab_a">Yes,choose now</label>
+</div>
+</div>
+<div class="pzbox" id="pzbox" style="display:none">
+<div class="pzhh">
+Processor<Input type="radio" id="cpu1" name="cpu" class="lab_a" value="Corei3" /><label for="cpu1" class="lab_a">Corei3</label>
+<Input type="radio" id="cpu2" name="cpu" class="lab_a" value="Corei5" /><label for="cpu2" class="lab_a">Corei5</label>
+<Input type="radio" id="cpu3" name="cpu" class="lab_a" value="Corei7" /><label for="cpu3" class="lab_a">Corei7</label>
+</div>
+<div class="pzhh">
+Sreen Size<Input type="radio" id="mm1" name="mmcc" class="lab_a" value="13~16Inches" /><label for="mm1" class="lab_a">13~16Inches</label>
+<Input type="radio" id="mm2" name="mmcc" class="lab_a" value="16~20Inches" /><label for="mm2" class="lab_a">16~20Inches</label>
+<Input type="radio" id="mm3" name="mmcc" class="lab_a" value="20Inches" /><label for="mm3" class="lab_a">20Inches</label>
+</div>
+<div class="pzhh">
+Hard drive Cap<Input type="radio" id="yp1" name="yp" class="lab_a" value="256G SSD" /><label for="yp1" class="lab_a">256G SSD</label>
+<Input type="radio" id="yp2" name="yp" class="lab_a" value="512G SSD" /><label for="yp2" class="lab_a">512G SSD</label>
+<Input type="radio" id="yp3" name="yp" class="lab_a" value="1T SSD" /><label for="yp3" class="lab_a">1T SSD</label>
+</div>
+<div class="pzhh">
+Memory Capacity<Input type="radio" id="nc1" name="nc" class="lab_a" value="4G" /><label for="nc1" class="lab_a">4G</label>
+<Input type="radio" id="nc2" name="nc" class="lab_a" value="8G" /><label for="nc2" class="lab_a">8G</label>
+<Input type="radio" id="nc3" name="nc" class="lab_a" value="16G" /><label for="nc3" class="lab_a">16G</label>
+</div>
+</div>
+<div class="cxok">
+<a href="#itemlist"  onclick="check()" ><input type="button" class="cxbtn" value="Research"/></a>
+<input type="reset" class="czbtn" value="Reset" />
+</div>
+</form>
+
+<div class="itemlist" style="display:none" id="itemlist">
+
+<div class="post">
+<div class="pic"><img src="images/2.png" /></div>
+<div class="bd">
+<p class="s1">Dell G3</p>
+<p class="s2">RMB 7000.00</p>
+</div>
+</div>
+
+<div class="post">
+<div class="pic"><img src="images/1.png" /></div>
+<div class="bd">
+<p class="s1">Lenovo Y7000P</p>
+<p class="s2">RMB 7500.00</p>
+</div>
+</div>
+
+<div class="post">
+<div class="pic"><img src="images/3.png" /></div>
+<div class="bd">
+<p class="s1">AppleMacBook Air</p>
+<p class="s2">RMB 7999.00</p>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+
+<script src="js/check.js"></script>
+<div style=" height:100px " ></div>
+</body>
+</html>
